@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arrays </title>
+    </head>
+
+    <body>
+        <h2> Finding Min and Max </h2>
+        <script> 
+            const arr=[];
+
+            let n=+prompt('Enter number of elements:');
+
+            for (let i=0;i<n;i++){
+                n[i]=+prompt(`Enter value of n[${i}]:`);
+
+                let max=n[0];  //assume n[0] is maximum
+                let min=n[0];
+
+                for(let i=1; i<n; i++){
+                    if (n[i]>max)
+                        max = n[i];
+
+                    if (n[i]<min)
+                        min=n[i];
+                } 
+            }
+
+            document.write(`Elements: ${n}`);
+            document.write(`Max value: ${max}`);
+            document.write(`Min value: ${min}`);
+            
+        </script>
+    </body>
+</html>

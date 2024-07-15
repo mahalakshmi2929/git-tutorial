@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arrays </title>
+    </head>
+
+    <body>
+        <h2> Demo on Arrays </h2>
+        <script> 
+            // let data=['maha ', 20, ' B.tech ', false, new Date()];
+            // document.write(`Data : ${data} <br>`);
+            
+
+            // //constant array
+            // //data can be modified
+            // const arr=[1,2,3,4];
+            // document.write(`Array: ${arr} <br>`);
+
+            // arr[0]=101; //modifying the array
+            // arr[2]=303;
+            // document.write(`Array: ${arr} <br>`);
+
+
+             //dynamic array
+             const b=[10,20,30,40,50];
+             document.write(`B => ${b} <br>`);
+             document.write(`${b.length} <br>`);
+
+             document.write(`${b.length} <br>`);
+             b.length=3;
+             b.length=4;
+             document.write(`B => ${b} <br>`);
+             document.write(`B => ${b} <br>`);
+
+             b[3]=40;
+             document.write(`${b.length} <br>`);
+
+            //dynamic values
+            const c=[];
+            let n =+prompt("Enter number of elements:");
+            for (let i=0;i<n;i++)
+                c[i]=prompt(`Enter value of position ${i} `);
+            document.write(`C : ${c}`);
+
+            const d=[];
+            let m =+prompt("Enter number of elements:");
+            for (let i=0;i<m;i++)
+                d[i]=prompt(`Enter value of position ${i} `);
+            document.write(`D : ${d}`);
+            </script>
+    </body>
+</html>
